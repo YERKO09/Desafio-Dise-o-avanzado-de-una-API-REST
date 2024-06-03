@@ -1,0 +1,37 @@
+###GET JOYAS
+GET http://localhost:3000/joyas
+Content-Type: 'application/json'
+
+###GET con QueryStrings
+GET http://localhost:3000/joyas/filtros?precio_min=25000&precio_max=30000&categoria=aros&metal=plata
+Content-Type: 'application/json'
+
+###GET BY ID
+GET http://localhost:3000/joyas/1
+Content-Type: 'application/json'
+
+###ERROR DE EXTENSIÓN, MEJOR USAR THUNDER CLIENT
+POST http://127.0.0.1:3000/joyas
+Content-Type: 'application/json'
+{
+    "nombre": "Anillo Gryffindor",
+    "categoria": "anillo",
+    "metal": "Acero Inoxidable",
+    "precio": 12000,
+    "stock": 10
+},
+{
+    "nombre": "Collar Slytherin",
+    "categoria": "collar",
+    "metal": "Acero Inoxidable",
+    "precio": 13000,
+    "stock": 10
+}
+
+###
+DELETE http://localhost:3000/joyas/8
+Content-Type: 'application/json'
+
+###
+# PUT http://localhost:3000/joyas/1
+# Content-Type: 'application/json'
